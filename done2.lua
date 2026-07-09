@@ -174,7 +174,7 @@ EquipWeapon = function(weaponName)
     end
 end
 task.spawn(function()
-    local tool = localPlayer["Backpack"]:FindFirstChild("Tên_Vũ_Khí_Của_Bạn")
+    local tool = localPlayer["Backpack"]:FindFirstChild("combat")
     if tool then
         localPlayer["Character"]["Humanoid"]:EquipTool(tool)
     end
@@ -1098,7 +1098,7 @@ function CheckQuest()
     elseif  MyLevel>=2700 then
       Mon="Grand Devotee"LevelQuest=2 NameQuest="SubmergedQuest3"NameMon="Grand Devotee"CFrameQuest=CFrame["new"](9635.8701171875,-1992.4481201172,9614.3935546875)CFrameMon=CFrame["new"](9591.0546875,-1993.4742431641,9808.705078125)
     end
-  end
+  return "No Quest Available"
 end)
 local dz = {}
 dz["listfunction"] = {}
