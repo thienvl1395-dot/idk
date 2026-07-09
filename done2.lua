@@ -1,4 +1,3 @@
-
   local success = pcall(function()
     local allowedWorlds = {
         [2753915549] = true,
@@ -218,8 +217,7 @@ gay=(function()
   if rootPart and workspace["_WorldOrigin"]["Foam;"] then
     rootPart:Destroy()
   end
-end
-)()
+end)
 
 local f={}
 f["__index"]=f
